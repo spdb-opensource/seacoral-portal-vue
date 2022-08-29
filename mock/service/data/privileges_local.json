@@ -1,0 +1,107 @@
+{
+    "code": 200,
+    "data": [
+        {
+            "code": "SELECT",
+            "description": "SELECT",
+            "enabled": true,
+            "sequence": 10
+        },
+        {
+            "code": "CREATE ROUTINE",
+            "description": "CREATE ROUTINE",
+            "enabled": true,
+            "sequence": 10
+        },
+        {
+            "code": "UPDATE",
+            "description": "UPDATE",
+            "enabled": true,
+            "sequence": 20
+        },
+        {
+            "code": "INSERT",
+            "description": "INSERT",
+            "enabled": true,
+            "sequence": 30
+        },
+        {
+            "code": "DELETE",
+            "description": "DELETE",
+            "enabled": true,
+            "sequence": 40
+        },
+        {
+            "code": "ALTER",
+            "description": "ALTER",
+            "enabled": true,
+            "sequence": 50
+        },
+        {
+            "code": "EXECUTE",
+            "description": "EXECUTE",
+            "enabled": true,
+            "sequence": 60
+        },
+        {
+            "code": "CREATE",
+            "description": "CREATE",
+            "enabled": true,
+            "sequence": 70
+        },
+        {
+            "code": "DROP",
+            "description": "DROP",
+            "enabled": true,
+            "sequence": 80
+        },
+        {
+            "code": "INDEX",
+            "description": "INDEX",
+            "enabled": true,
+            "sequence": 90
+        },
+        {
+            "code": "ALTER ROUTINE",
+            "description": "ALTER ROUTINE",
+            "enabled": true,
+            "sequence": 110
+        },
+        {
+            "code": "EVENT",
+            "description": "EVENT",
+            "enabled": true,
+            "sequence": 990
+        },
+        {
+            "code": "SHOW VIEW",
+            "description": "SHOW VIEW",
+            "enabled": true,
+            "sequence": 990
+        },
+        {
+            "code": "REFERENCES",
+            "description": "REFERENCES",
+            "enabled": true,
+            "sequence": 990
+        },
+        {
+            "code": "CREATE VIEW",
+            "description": "CREATE VIEW",
+            "enabled": true,
+            "sequence": 990
+        },
+        {
+            "code": "LOCK TABLES",
+            "description": "LOCK TABLES",
+            "enabled": true,
+            "sequence": 990
+        },
+        {
+            "code": "CREATE TEMPORARY TABLES",
+            "description": "CREATE TEMPORARY TABLES",
+            "enabled": true,
+            "sequence": 990
+        }
+    ]
+}

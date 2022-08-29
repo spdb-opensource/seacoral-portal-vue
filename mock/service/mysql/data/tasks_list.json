@@ -1,0 +1,17 @@
+{
+    "code": 200,
+    "data": [
+        {
+            "id": "8c199ede-d291-4cd8-b1b4-37a3baaf2812",
+            "userDTO": {
+                "username": "admin",
+                "name": "超级管理员"
+            },
+            "action": "创建",
+            "status": "成功",
+            "error": "",
+            "startDateTime": "2020-04-17 12:04:02",
+            "endDateTime": "2020-04-17 12:07:06"
+        }
+    ]
+}

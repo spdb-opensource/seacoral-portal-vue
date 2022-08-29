@@ -1,0 +1,199 @@
+{
+    "code": 200,
+    "data": {
+        "id": "06ebc8dd-d2f8-46c3-b2d7-2a07e0e3affd",
+        "area": {
+            "code": "area1",
+            "name": "区域一"
+        },
+        "owner": {
+            "username": "admin",
+            "name": "超级管理员"
+        },
+        "name": "testz",
+        "orderGroupId": "8ae7890d4c0b4b6e9dd200bd53b418da",
+        "expect": false,
+        "gmtCreate": "2020-04-17 12:04:03",
+        "status": "passing",
+        "task": {
+            "id": "8c199ede-d291-4cd8-b1b4-37a3baaf2812",
+            "action": {
+                "code": "app-add",
+                "display": "创建"
+            },
+            "status": {
+                "code": "success",
+                "display": "成功"
+            }
+        },
+        "mysqlArchs": {
+            "typeCode": "replication_semi_sync",
+            "typeName": "主备(半同步)",
+            "cntCode": "2",
+            "cntName": "2"
+        },
+        "mysqlScales": {
+            "cpu": 1,
+            "memSize": 1024
+        },
+        "mysqlVersions": {
+            "id": "db785fcb-a9bb-40ab-9ab1-8ebf51261727",
+            "name": "mysql-5.7.25.5"
+        },
+        "servs": [
+            {
+                "type": "mysql",
+                "port": 3306,
+                "archTypeCode": "replication_semi_sync",
+                "archTypeName": "主备(半同步)",
+                "unitCnt": "2",
+                "archCntName": "2",
+                "units": [
+                    {
+                        "id": "testz-database0000-c18b784e-0",
+                        "sequence": "0",
+                        "type": "mysql",
+                        "name": "testz-database0000-c18b784e-0",
+                        "host": {
+                            "id": "dd1c75cc-485f-47e3-a496-55c58d08c8e4",
+                            "ip": "10.112.12.163",
+                            "cluster": {
+                                "id": "951787f6-9653-4b3c-a9e7-695d6dd0fc3e",
+                                "name": "uat-cluster1"
+                            }
+                        },
+                        "servIp": "10.134.8.77",
+                        "version": {
+                            "major": 5,
+                            "minor": 7,
+                            "patch": 25,
+                            "build": 5
+                        },
+                        "cpuCnt": 1,
+                        "memSize": 1024,
+                        "status": "passing",
+                        "containerStatus": "Running",
+                        "task": {
+                            "id": "8c199ede-d291-4cd8-b1b4-37a3baaf2812",
+                            "action": {
+                                "code": "app-add",
+                                "display": "创建"
+                            },
+                            "status": {
+                                "code": "success",
+                                "display": "成功"
+                            }
+                        },
+                        "replication": {
+                            "selfIp": "10.134.8.77",
+                            "selfPort": 3306,
+                            "role": "master",
+                            "roleName": "主",
+                            "masterIp": "10.134.8.77",
+                            "masterPort": 3306,
+                            "slaveRunning": "unknown"
+                        }
+                    },
+                    {
+                        "id": "testz-database0000-edd1770b-1",
+                        "sequence": "1",
+                        "type": "mysql",
+                        "name": "testz-database0000-edd1770b-1",
+                        "host": {
+                            "id": "b3c667de-09a7-4830-b183-1789656e52e2",
+                            "ip": "10.112.12.162",
+                            "cluster": {
+                                "id": "951787f6-9653-4b3c-a9e7-695d6dd0fc3e",
+                                "name": "uat-cluster1"
+                            }
+                        },
+                        "servIp": "10.134.8.76",
+                        "version": {
+                            "major": 5,
+                            "minor": 7,
+                            "patch": 25,
+                            "build": 5
+                        },
+                        "cpuCnt": 1,
+                        "memSize": 1024,
+                        "status": "passing",
+                        "containerStatus": "Running",
+                        "task": {
+                            "id": "8c199ede-d291-4cd8-b1b4-37a3baaf2812",
+                            "action": {
+                                "code": "app-add",
+                                "display": "创建"
+                            },
+                            "status": {
+                                "code": "success",
+                                "display": "成功"
+                            }
+                        },
+                        "replication": {
+                            "selfIp": "10.134.8.76",
+                            "selfPort": 3306,
+                            "role": "slave",
+                            "roleName": "从",
+                            "masterIp": "10.134.8.77",
+                            "masterPort": 3306,
+                            "slaveRunning": "passing",
+                            "slaveIoRunning": "Yes",
+                            "slaveSqlRunning": "Yes",
+                            "slaveIoState": "Waiting for master to send event",
+                            "slaveSqlRunningState": "Slave has read all relay log; waiting for more updates",
+                            "secondsBehindMaster": 0,
+                            "masterLogFile": "mysql-bin.000001",
+                            "relayMasterLogFile": "mysql-bin.000001",
+                            "relayLogFile": "relay-bin.000002",
+                            "relayLogPos": 367,
+                            "lastIoError": "",
+                            "lastSqlError": ""
+                        }
+                    }
+                ]
+            }
+        ],
+        "specs": [
+            {
+                "type": "mysql",
+                "version": {
+                    "major": 5,
+                    "minor": 7,
+                    "patch": 25,
+                    "build": 5
+                },
+                "arch": {
+                    "mode": "replication_semi_sync",
+                    "replicas": 2,
+                    "name": "主备(半同步)"
+                },
+                "cpuCnt": 1,
+                "memSize": 1024,
+                "dataDirSize": 10240,
+                "dataDirType": {
+                    "code": "remote",
+                    "display": "外置存储"
+                },
+                "dataDirPerformance": {
+                    "code": "high",
+                    "display": "高性能"
+                },
+                "logDirSize": 10240,
+                "logDirType": {
+                    "code": "remote",
+                    "display": "外置存储"
+                },
+                "logDirPerformance": {
+                    "code": "high",
+                    "display": "高性能"
+                },
+                "ha": {
+                    "cluster": false,
+                    "host": false,
+                    "netwoking": false,
+                    "storage": false
+                }
+            }
+        ]
+    }
+}

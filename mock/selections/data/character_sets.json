@@ -1,0 +1,26 @@
+[
+    {
+        "id": "42",
+        "code": "utf8mb4",
+        "name": "UTF-8-mb4",
+        "sequence": 1,
+        "gmtCreate": "2019-01-01 00:00:00",
+        "creator": "admin"
+    },
+    {
+        "id": "43",
+        "code": "gbk",
+        "name": "GBK",
+        "sequence": 2,
+        "gmtCreate": "2019-01-01 00:00:00",
+        "creator": "admin"
+    },
+    {
+        "id": "44",
+        "code": "utf8",
+        "name": "UTF-8",
+        "sequence": 1,
+        "gmtCreate": "2019-01-01 00:00:00",
+        "creator": "admin"
+    }
+]

@@ -1,0 +1,1047 @@
+[
+    {
+        "id": 1,
+        "name": "资源管理",
+        "type": "menu",
+        "subApps": [
+            {
+                "id": 275,
+                "name": "站点管理",
+                "type": "page",
+                "subApps": [
+                    {
+                        "id": 276,
+                        "name": "新增",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 294,
+                        "name": "编辑",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 277,
+                        "name": "删除",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 278,
+                        "name": "刷新",
+                        "type": "button",
+                        "subApps": []
+                    }
+                ]
+            },
+            {
+                "id": 34,
+                "name": "集群管理",
+                "type": "page",
+                "subApps": [
+                    {
+                        "id": 36,
+                        "name": "新增",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 39,
+                        "name": "编辑",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 37,
+                        "name": "启用",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 38,
+                        "name": "停用",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 41,
+                        "name": "删除",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 236,
+                        "name": "刷新",
+                        "type": "button",
+                        "subApps": []
+                    }
+                ]
+            },
+            {
+                "id": 19,
+                "name": "网段管理",
+                "type": "page",
+                "subApps": [
+                    {
+                        "id": 21,
+                        "name": "新增",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 26,
+                        "name": "编辑",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 23,
+                        "name": "启用",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 24,
+                        "name": "停用",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 28,
+                        "name": "注销",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 234,
+                        "name": "刷新",
+                        "type": "button",
+                        "subApps": []
+                    }
+                ]
+            },
+            {
+                "id": 59,
+                "name": "存储管理",
+                "type": "page",
+                "subApps": [
+                    {
+                        "id": 60,
+                        "name": "新增",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 272,
+                        "name": "启用",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 62,
+                        "name": "停用",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 61,
+                        "name": "删除",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 63,
+                        "name": "资源池",
+                        "type": "button",
+                        "subApps": [
+                            {
+                                "id": 64,
+                                "name": "新增",
+                                "type": "subButton",
+                                "subApps": []
+                            },
+                            {
+                                "id": 66,
+                                "name": "启用",
+                                "type": "subButton",
+                                "subApps": []
+                            },
+                            {
+                                "id": 67,
+                                "name": "停用",
+                                "type": "subButton",
+                                "subApps": []
+                            },
+                            {
+                                "id": 65,
+                                "name": "删除",
+                                "type": "subButton",
+                                "subApps": []
+                            },
+                            {
+                                "id": 257,
+                                "name": "刷新",
+                                "type": "subButton",
+                                "subApps": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": 238,
+                        "name": "刷新",
+                        "type": "button",
+                        "subApps": []
+                    }
+                ]
+            },
+            {
+                "id": 47,
+                "name": "主机管理",
+                "type": "page",
+                "subApps": [
+                    {
+                        "id": 51,
+                        "name": "入库",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 281,
+                        "name": "监控注册",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 50,
+                        "name": "编辑",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 52,
+                        "name": "启用",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 53,
+                        "name": "停用",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 282,
+                        "name": "监控注销",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 237,
+                        "name": "刷新",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 54,
+                        "name": "出库",
+                        "type": "button",
+                        "subApps": []
+                    }
+                ]
+            },
+            {
+                "id": 15,
+                "name": "镜像管理",
+                "type": "page",
+                "subApps": [
+                    {
+                        "id": 16,
+                        "name": "新增",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 42,
+                        "name": "启用",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 43,
+                        "name": "停用",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 44,
+                        "name": "删除",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 233,
+                        "name": "刷新",
+                        "type": "button",
+                        "subApps": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 68,
+        "name": "申请管理",
+        "type": "menu",
+        "subApps": [
+            {
+                "id": 69,
+                "name": "MySQL",
+                "type": "page",
+                "subApps": []
+            },
+            {
+                "id": 71,
+                "name": "申请单审批",
+                "type": "page",
+                "subApps": [
+                    {
+                        "id": 72,
+                        "name": "审批",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 73,
+                        "name": "执行",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 74,
+                        "name": "详情",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 75,
+                        "name": "编辑",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 76,
+                        "name": "删除",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 239,
+                        "name": "刷新",
+                        "type": "button",
+                        "subApps": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 79,
+        "name": "服务管理",
+        "type": "menu",
+        "subApps": [
+            {
+                "id": 111,
+                "name": "MySQL管理",
+                "type": "page",
+                "subApps": [
+                    {
+                        "id": 112,
+                        "name": "启动",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 113,
+                        "name": "停止",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 114,
+                        "name": "备份",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 115,
+                        "name": "删除",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 116,
+                        "name": "扩容",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 117,
+                        "name": "升级",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 118,
+                        "name": "移交",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 119,
+                        "name": "导出",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 120,
+                        "name": "管理",
+                        "type": "button",
+                        "subApps": [
+                            {
+                                "id": 219,
+                                "name": "部署架构",
+                                "type": "subButton",
+                                "subApps": []
+                            },
+                            {
+                                "id": 220,
+                                "name": "数据库",
+                                "type": "subButton",
+                                "subApps": [
+                                    {
+                                        "id": 121,
+                                        "name": "启动",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 122,
+                                        "name": "停止",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 123,
+                                        "name": "备份",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 124,
+                                        "name": "还原",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 125,
+                                        "name": "迁移",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 126,
+                                        "name": "重建",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 127,
+                                        "name": "隔离",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 128,
+                                        "name": "回切",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 129,
+                                        "name": "升级",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 130,
+                                        "name": "监控",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 131,
+                                        "name": "慢日志",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 280,
+                                        "name": "角色变更",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 245,
+                                        "name": "刷新",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 285,
+                                        "name": "设置为从",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 221,
+                                "name": "代理",
+                                "type": "subButton",
+                                "subApps": [
+                                    {
+                                        "id": 132,
+                                        "name": "启动",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 133,
+                                        "name": "停止",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 134,
+                                        "name": "重建",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 135,
+                                        "name": "升级",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 136,
+                                        "name": "监控",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 246,
+                                        "name": "刷新",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 222,
+                                "name": "高可用",
+                                "type": "subButton",
+                                "subApps": [
+                                    {
+                                        "id": 137,
+                                        "name": "启动",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 138,
+                                        "name": "停止",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 139,
+                                        "name": "重建",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 140,
+                                        "name": "升级",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 141,
+                                        "name": "监控",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 247,
+                                        "name": "刷新",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 223,
+                                "name": "参数管理",
+                                "type": "subButton",
+                                "subApps": [
+                                    {
+                                        "id": 142,
+                                        "name": "参数编辑",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 265,
+                                        "name": "刷新",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 224,
+                                "name": "分库策略",
+                                "type": "subButton",
+                                "subApps": []
+                            },
+                            {
+                                "id": 225,
+                                "name": "库管理",
+                                "type": "subButton",
+                                "subApps": [
+                                    {
+                                        "id": 143,
+                                        "name": "新增",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 144,
+                                        "name": "删除",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 266,
+                                        "name": "刷新",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 226,
+                                "name": "用户管理",
+                                "type": "subButton",
+                                "subApps": [
+                                    {
+                                        "id": 145,
+                                        "name": "新增",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 146,
+                                        "name": "编辑",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 147,
+                                        "name": "删除",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 148,
+                                        "name": "重置密码",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 267,
+                                        "name": "刷新",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 227,
+                                "name": "直连用户",
+                                "type": "subButton",
+                                "subApps": [
+                                    {
+                                        "id": 149,
+                                        "name": "新增",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 284,
+                                        "name": "编辑",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 150,
+                                        "name": "删除",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 268,
+                                        "name": "刷新",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 279,
+                                        "name": "重置密码",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 228,
+                                "name": "备份策略",
+                                "type": "subButton",
+                                "subApps": [
+                                    {
+                                        "id": 151,
+                                        "name": "新增",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 152,
+                                        "name": "编辑",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 153,
+                                        "name": "删除",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 154,
+                                        "name": "启用",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 155,
+                                        "name": "停用",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 269,
+                                        "name": "刷新",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 229,
+                                "name": "备份列表",
+                                "type": "subButton",
+                                "subApps": [
+                                    {
+                                        "id": 156,
+                                        "name": "删除",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    },
+                                    {
+                                        "id": 270,
+                                        "name": "刷新",
+                                        "type": "sSubButton",
+                                        "subApps": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 230,
+                                "name": "监控管理",
+                                "type": "subButton",
+                                "subApps": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": 283,
+                        "name": "监控注册",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 244,
+                        "name": "刷新",
+                        "type": "button",
+                        "subApps": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 164,
+        "name": "系统维护",
+        "type": "menu",
+        "subApps": [
+            {
+                "id": 206,
+                "name": "操作记录",
+                "type": "page",
+                "subApps": []
+            },
+            {
+                "id": 197,
+                "name": "规模管理",
+                "type": "page",
+                "subApps": [
+                    {
+                        "id": 198,
+                        "name": "新增",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 199,
+                        "name": "编辑",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 207,
+                        "name": "启用",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 208,
+                        "name": "停用",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 200,
+                        "name": "删除",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 254,
+                        "name": "刷新",
+                        "type": "button",
+                        "subApps": []
+                    }
+                ]
+            },
+            {
+                "id": 170,
+                "name": "角色管理",
+                "type": "page",
+                "subApps": [
+                    {
+                        "id": 171,
+                        "name": "新增",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 172,
+                        "name": "编辑",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 173,
+                        "name": "删除",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 250,
+                        "name": "刷新",
+                        "type": "button",
+                        "subApps": []
+                    }
+                ]
+            },
+            {
+                "id": 174,
+                "name": "组别管理",
+                "type": "page",
+                "subApps": [
+                    {
+                        "id": 175,
+                        "name": "新增",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 176,
+                        "name": "编辑",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 177,
+                        "name": "删除",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 260,
+                        "name": "人员配置",
+                        "type": "button",
+                        "subApps": [
+                            {
+                                "id": 262,
+                                "name": "刷新",
+                                "type": "subButton",
+                                "subApps": []
+                            },
+                            {
+                                "id": 261,
+                                "name": "保存",
+                                "type": "subButton",
+                                "subApps": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": 251,
+                        "name": "刷新",
+                        "type": "button",
+                        "subApps": []
+                    }
+                ]
+            },
+            {
+                "id": 165,
+                "name": "用户管理",
+                "type": "page",
+                "subApps": [
+                    {
+                        "id": 166,
+                        "name": "新增",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 167,
+                        "name": "编辑",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 168,
+                        "name": "启用",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 169,
+                        "name": "停用",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 211,
+                        "name": "修改密码",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 249,
+                        "name": "刷新",
+                        "type": "button",
+                        "subApps": []
+                    }
+                ]
+            },
+            {
+                "id": 186,
+                "name": "字典管理",
+                "type": "page",
+                "subApps": [
+                    {
+                        "id": 187,
+                        "name": "编辑",
+                        "type": "button",
+                        "subApps": []
+                    }
+                ]
+            },
+            {
+                "id": 286,
+                "name": "系统名称管理",
+                "type": "page",
+                "subApps": [
+                    {
+                        "id": 287,
+                        "name": "新增",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 289,
+                        "name": "删除",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 288,
+                        "name": "编辑",
+                        "type": "button",
+                        "subApps": []
+                    }
+                ]
+            },
+            {
+                "id": 290,
+                "name": "子系统名称管理",
+                "type": "page",
+                "subApps": [
+                    {
+                        "id": 291,
+                        "name": "新增",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 292,
+                        "name": "编辑",
+                        "type": "button",
+                        "subApps": []
+                    },
+                    {
+                        "id": 293,
+                        "name": "删除",
+                        "type": "button",
+                        "subApps": []
+                    }
+                ]
+            }
+        ]
+    }
+]

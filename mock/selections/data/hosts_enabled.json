@@ -1,0 +1,129 @@
+{
+    "code": 200,
+    "data": [
+        {
+            "id": "b3c667de-09a7-4830-b183-1789656e52e2",
+            "name": "10.112.12.162",
+            "cluster": {
+                "id": "951787f6-9653-4b3c-a9e7-695d6dd0fc3e",
+                "name": "uat-cluster1"
+            },
+            "ip": "10.112.12.162",
+            "room": "room1",
+            "seat": "101",
+            "ntpServer": "10.112.3.132",
+            "storage": [],
+            "storageRemote": {
+                "id": "5ac4e3bf-bfde-4ffa-8a84-2246a8f3accc",
+                "name": "fusionstor102"
+            },
+            "maxUnitCnt": 50,
+            "maxUsage": {
+                "cpu": 80,
+                "mem": 80,
+                "bandwidth": 80,
+                "storage": 0
+            },
+            "os": "linux",
+            "cpu": {
+                "total": 56,
+                "usedCnt": 4
+            },
+            "pod": {
+                "totalSize": 50,
+                "usedSize": 4
+            },
+            "mem": {
+                "totalSize": 515163,
+                "usedSize": 4796
+            },
+            "bandwidth": {
+                "totalSize": 0,
+                "usedSize": 0
+            },
+            "enabled": true,
+            "description": "",
+            "created": {
+                "timestamp": "2020-02-21 09:51:01",
+                "username": "admin"
+            },
+            "modified": {
+                "timestamp": "2020-03-10 10:42:13",
+                "username": ""
+            },
+            "task": {
+                "id": "11fd871f-b90e-445f-9137-ae3716cba4b0",
+                "action": {
+                    "code": "host-edit",
+                    "display": "编辑"
+                },
+                "status": {
+                    "code": "success",
+                    "display": "成功"
+                }
+            }
+        },
+        {
+            "id": "dd1c75cc-485f-47e3-a496-55c58d08c8e4",
+            "name": "10.112.12.163",
+            "cluster": {
+                "id": "951787f6-9653-4b3c-a9e7-695d6dd0fc3e",
+                "name": "uat-cluster1"
+            },
+            "ip": "10.112.12.163",
+            "room": "room1",
+            "seat": "102",
+            "ntpServer": "10.112.3.132",
+            "storage": [],
+            "storageRemote": {
+                "id": "5ac4e3bf-bfde-4ffa-8a84-2246a8f3accc",
+                "name": "fusionstor102"
+            },
+            "maxUnitCnt": 50,
+            "maxUsage": {
+                "cpu": 80,
+                "mem": 80,
+                "bandwidth": 80,
+                "storage": 0
+            },
+            "os": "linux",
+            "cpu": {
+                "total": 28,
+                "usedCnt": 1
+            },
+            "pod": {
+                "totalSize": 50,
+                "usedSize": 1
+            },
+            "mem": {
+                "totalSize": 450654,
+                "usedSize": 1724
+            },
+            "bandwidth": {
+                "totalSize": 0,
+                "usedSize": 0
+            },
+            "enabled": true,
+            "description": "",
+            "created": {
+                "timestamp": "2020-02-21 14:13:45",
+                "username": "admin"
+            },
+            "modified": {
+                "timestamp": "0001-01-01 00:00:00",
+                "username": ""
+            },
+            "task": {
+                "id": "08f7ad99-888d-4a45-8901-d9df9c2eaea3",
+                "action": {
+                    "code": "host-add",
+                    "display": "入库"
+                },
+                "status": {
+                    "code": "success",
+                    "display": "成功"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,130 @@
+{
+    "code": 200,
+    "data": [
+        {
+            "id": "2a162c52-d760-4c44-b4f9-dfbecf6dcae0",
+            "name": "",
+            "path": "xdrtv-database0000-7c1eeff1-0-1587002999-full-backup-pv",
+            "type": "full",
+            "size": 6290,
+            "gmtStart": "2020-04-16 10:10:00",
+            "gmtEnd": "2020-04-16 10:10:34",
+            "expire": "2020-04-18 10:10:34",
+            "valid": true,
+            "status": "Complete",
+            "storageRemote": {
+                "id": "",
+                "name": ""
+            },
+            "unit": {
+                "id": "xdrtv-database0000-7c1eeff1-0",
+                "name": ""
+            },
+            "servGroup": {
+                "id": "477e338e-1981-4248-a079-fb5e114c4e56",
+                "name": "",
+                "owner": "admin"
+            }
+        },
+        {
+            "id": "3480073e-ac63-4622-8aa0-ca02389a955b",
+            "name": "",
+            "path": "xdrtv-database0000-7c1eeff1-0-1587018236-full-backup-pv",
+            "type": "full",
+            "size": 6290,
+            "gmtStart": "2020-04-16 14:23:57",
+            "gmtEnd": "2020-04-16 14:24:26",
+            "expire": "2020-04-18 14:24:26",
+            "valid": true,
+            "status": "Complete",
+            "storageRemote": {
+                "id": "",
+                "name": ""
+            },
+            "unit": {
+                "id": "xdrtv-database0000-7c1eeff1-0",
+                "name": ""
+            },
+            "servGroup": {
+                "id": "477e338e-1981-4248-a079-fb5e114c4e56",
+                "name": "",
+                "owner": "admin"
+            }
+        },
+        {
+            "id": "7c1539ca-c8aa-438c-8aec-25d0bd5b8135",
+            "name": "",
+            "path": "xdrtv-database0000-5b39ffc3-1-1585904912-full-backup-pv",
+            "type": "full",
+            "size": 6289,
+            "gmtStart": "2020-04-03 17:08:33",
+            "gmtEnd": "2020-04-03 17:09:01",
+            "expire": "2020-04-04 17:09:01",
+            "valid": true,
+            "status": "Complete",
+            "storageRemote": {
+                "id": "",
+                "name": ""
+            },
+            "unit": {
+                "id": "xdrtv-database0000-5b39ffc3-1",
+                "name": ""
+            },
+            "servGroup": {
+                "id": "477e338e-1981-4248-a079-fb5e114c4e56",
+                "name": "",
+                "owner": "admin"
+            }
+        },
+        {
+            "id": "8c162360-708b-4a2e-97e0-b49e64968b70",
+            "name": "",
+            "path": "xdrtv-database0000-5b39ffc3-1-1585895913-full-backup-pv",
+            "type": "full",
+            "size": 6289,
+            "gmtStart": "2020-04-03 14:38:35",
+            "gmtEnd": "2020-04-03 14:39:00",
+            "expire": "2020-04-04 14:39:00",
+            "valid": true,
+            "status": "Complete",
+            "storageRemote": {
+                "id": "",
+                "name": ""
+            },
+            "unit": {
+                "id": "xdrtv-database0000-5b39ffc3-1",
+                "name": ""
+            },
+            "servGroup": {
+                "id": "477e338e-1981-4248-a079-fb5e114c4e56",
+                "name": "",
+                "owner": "admin"
+            }
+        },
+        {
+            "id": "c90d9206-4241-4fa7-a6bb-2727cca8de04",
+            "name": "",
+            "path": "xdrtv-database0000-5b39ffc3-1-1585123730-full-backup-pv",
+            "type": "full",
+            "size": 6289,
+            "gmtStart": "2020-03-25 16:08:52",
+            "gmtEnd": "2020-03-25 16:09:19",
+            "expire": "2020-03-26 16:09:19",
+            "valid": true,
+            "status": "Complete",
+            "storageRemote": {
+                "id": "",
+                "name": ""
+            },
+            "unit": {
+                "id": "xdrtv-database0000-5b39ffc3-1",
+                "name": ""
+            },
+            "servGroup": {
+                "id": "477e338e-1981-4248-a079-fb5e114c4e56",
+                "name": "",
+                "owner": "admin"
+            }
+        }
+    ]
+}

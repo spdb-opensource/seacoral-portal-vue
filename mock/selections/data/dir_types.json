@@ -1,0 +1,18 @@
+[
+    {
+        "id": "40",
+        "code": "host",
+        "name": "本地存储",
+        "sequence": 1,
+        "gmtCreate": "2019-01-01 00:00:00",
+        "creator": "admin"
+    },
+    {
+        "id": "41",
+        "code": "remote",
+        "name": "外置存储",
+        "sequence": 2,
+        "gmtCreate": "2019-01-01 00:00:00",
+        "creator": "admin"
+    }
+]

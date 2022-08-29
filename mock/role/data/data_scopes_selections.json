@@ -1,0 +1,26 @@
+[
+    {
+        "id": "19",
+        "code": "oneself",
+        "name": "仅本人数据",
+        "sequence": 1,
+        "gmtCreate": "2019-01-01 00:00:00",
+        "creator": "admin"
+    },
+    {
+        "id": "20",
+        "code": "group",
+        "name": "本组数据",
+        "sequence": 2,
+        "gmtCreate": "2019-01-01 00:00:00",
+        "creator": "admin"
+    },
+    {
+        "id": "21",
+        "code": "all",
+        "name": "所有数据",
+        "sequence": 3,
+        "gmtCreate": "2019-01-01 00:00:00",
+        "creator": "admin"
+    }
+]

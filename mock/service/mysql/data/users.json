@@ -1,0 +1,43 @@
+{
+    "code": 200,
+    "data": [
+        {
+            "username": "test",
+            "whiteIps": "%",
+            "privileges": [
+                {
+                    "dbName": "aaa",
+                    "privileges": [
+                        "ALTER",
+                        "ALTER ROUTINE",
+                        "CREATE",
+                        "CREATE ROUTINE",
+                        "CREATE TEMPORARY TABLES",
+                        "CREATE VIEW",
+                        "DELETE",
+                        "DROP",
+                        "EVENT",
+                        "EXECUTE",
+                        "INDEX",
+                        "INSERT",
+                        "LOCK TABLES",
+                        "REFERENCES",
+                        "SELECT",
+                        "SHOW VIEW",
+                        "UPDATE"
+                    ]
+                },
+                {
+                    "dbName": "*",
+                    "privileges": [
+                        "PROCESS",
+                        "REPLICATION CLIENT",
+                        "REPLICATION SLAVE",
+                        "SUPER"
+                    ]
+                }
+            ],
+            "auth_type": "mysql_native_password"
+        }
+    ]
+}

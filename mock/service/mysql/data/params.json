@@ -1,0 +1,959 @@
+{
+    "code": 200,
+    "data": [
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::character_set_server",
+            "value": "utf8mb4",
+            "defaultValue": "latin1",
+            "description": "类型：字符串，服务器默认字符集。建议使用utf8mb4",
+            "range": ""
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::connect_timeout",
+            "value": "60",
+            "defaultValue": "10",
+            "description": "类型：整数，服务器端在响应失败的握手操作信息给客户端之前所等待的秒数。作用范围为全局，可用于配置文件，属动态变量。",
+            "range": "2 - 31536000"
+        },
+        {
+            "canset": true,
+            "mustRestart": true,
+            "key": "mysqld::lower_case_table_names",
+            "value": "1",
+            "defaultValue": "0",
+            "description": "类型：整数，大小写敏感参数。如果设置为0，则表名称按指定存储，区分大小写。 如果设置为1，表名称以小写存储在磁盘上，不区分大小写。 如果设置为2，表名称将按照给定的方式存储，但区分小写。 此选项也适用于数据库名称和表别名。",
+            "range": "0 - 2"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::max_connect_errors",
+            "value": "50",
+            "defaultValue": "100",
+            "description": "类型：整数，最大错误连接数，超过这个数量，用户将会锁住。",
+            "range": "0 - 18446744073709551615"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::max_connections",
+            "value": "1024",
+            "defaultValue": "151",
+            "description": "类型：整数，同时进行客户端连接的最大允许数。",
+            "range": "1 - 100000"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::max_user_connections",
+            "value": "0",
+            "defaultValue": "0",
+            "description": "类型：整数，单个数据库用户最大并发连接数，0表示无限制。",
+            "range": "0 - 4294967295"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::net_read_timeout",
+            "value": "30",
+            "defaultValue": "30",
+            "description": "类型：整数，当服务器从客户端读取时，net_read_timeout是控制何时中止的超时值。",
+            "range": "1 - "
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::net_write_timeout",
+            "value": "60",
+            "defaultValue": "30",
+            "description": "类型：整数，当服务器写入客户端时，net_write_timeout是控制何时中止的超时值。",
+            "range": "1 - "
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::max_allowed_packet",
+            "value": "64M",
+            "defaultValue": "4194304",
+            "description": "类型：整数，客户端和服务器之间传输单个数据包最大大小。",
+            "range": "1024 - 10373741824"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::skip_name_resolve",
+            "value": "ON",
+            "defaultValue": "OFF",
+            "description": "类型：布尔，域名解析开关。",
+            "range": "OFF、ON"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::transaction_isolation",
+            "value": "READ-COMMITTED",
+            "defaultValue": "REPEATABLE-READ",
+            "description": "类型：枚举，数据库事务隔离级别。",
+            "range": "READ-UNCOMMITTED、READ-COMMITTED、REPEATABLE-READ、SERIALIZABLE"
+        },
+        {
+            "canset": false,
+            "mustRestart": true,
+            "key": "mysqld::open_files_limit",
+            "value": "65535",
+            "defaultValue": "5000",
+            "description": "类型：整数，允许mysqld进程打开操作系统上文件的个数",
+            "range": "0 - （platform dependent）"
+        },
+        {
+            "canset": false,
+            "mustRestart": true,
+            "key": "mysqld::table_definition_cache",
+            "value": "2000",
+            "defaultValue": "-1",
+            "description": "类型：整数，可以存储在定义高速缓存中的表定义（来自.frm文件）的数量。 如果使用大量表，则可以创建大型表定义高速缓存以加快表的打开速度。 与普通表缓存不同，表定义缓存占用的空间更少，不使用文件描述符。",
+            "range": "400 - 524288"
+        },
+        {
+            "canset": false,
+            "mustRestart": true,
+            "key": "mysqld::table_open_cache_instances",
+            "value": "8",
+            "defaultValue": "16",
+            "description": "类型：整数，打开表缓存实例的数量。 为了通过减少会话之间的争用来提高可伸缩性，可以将开放表缓存划分为几个较小的缓存实例，其大小为table_open_cache / table_open_cache_instances。 会话需要仅锁定一个实例以访问DML语句。 这会在实例之间对高速缓存进行分段访问，从而在有许多会话访问表时允许使用高速缓存的操作具有更高的性能。（DDL语句仍然需要锁定整个缓存，但这些语句比DML语句要频繁得多。）",
+            "range": "1 - 64"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::query_cache_type",
+            "value": "0",
+            "defaultValue": "0",
+            "description": "类型：枚举，设置查询缓存类型。 设置GLOBAL值可设置此后连接的所有客户端的类型。 各个客户端可以设置SESSION值以影响它们自己对查询缓存的使用。",
+            "range": "0、1、2"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::query_cache_size",
+            "value": "0",
+            "defaultValue": "1048576",
+            "description": "类型：整数，分配用于缓存查询结果的内存量。 默认情况下，禁用查询缓存。 这是使用默认值1M实现的，query_cache_type的默认值为0.（如果将大小设置为0，则应显着减少开销，还应使用query_cache_type = 0启动服务器。",
+            "range": "0 - 18446744073709551615"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::thread_cache_size",
+            "value": "200",
+            "defaultValue": "-1",
+            "description": "类型：整数，服务器应缓存多少个线程以供重用。 当客户端断开连接时，如果那里的线程少于thread_cache_size，则客户端的线程将被放入缓存中。 如果可能，通过重用从高速缓存中获取的线程来满足线程请求，并且仅当高速缓存为空时才创建新线程。 如果您有许多新连接，可以增加此变量以提高性能。",
+            "range": "0 - 16384"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::slow_query_log",
+            "value": "ON",
+            "defaultValue": "OFF",
+            "description": "类型：布尔，是否启用慢查询日志。",
+            "range": "OFF、ON"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::min_examined_row_limit",
+            "value": "100",
+            "defaultValue": "0",
+            "description": "类型：整型，检查少于此行数的查询不会记录到慢查询日志中。",
+            "range": "0 - 18446744073709551615"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::log_queries_not_using_indexes",
+            "value": "ON",
+            "defaultValue": "OFF",
+            "description": "类型：布尔，没有使用索引的SQL语句将会记录在慢查询日志里。",
+            "range": "OFF、ON"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::log_throttle_queries_not_using_indexes",
+            "value": "10",
+            "defaultValue": "0",
+            "description": "类型：整型，如果启用了log_queries_not_using_indexes，则log_throttle_queries_not_using_indexes变量会限制每分钟可以写入慢查询日志的此类查询数。 值0（默认值）表示“无限制”。",
+            "range": "0 - "
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::long_query_time",
+            "value": "10",
+            "defaultValue": "10",
+            "description": "类型：数值，如果查询花费的时间超过此秒数，则服务器会增加Slow_queries状态变量。 如果启用了慢查询日志，则查询将记录到慢查询日志文件中。 此值是实时测量的，而不是CPU时间，因此在负载较轻的系统上低于阈值的查询可能会高于严重负载的阈值。 long_query_time的最小值和默认值分别为0和10。",
+            "range": "0"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::log_slow_admin_statements",
+            "value": "ON",
+            "defaultValue": "OFF",
+            "description": "类型：布尔，在写入慢查询日志的语句中包含慢速管理语句。 行政声明包括ALTER TABLE, ANALYZE TABLE, CHECK TABLE, CREATE INDEX, DROP INDEX, OPTIMIZE TABLE, REPAIR TABLE.",
+            "range": "OFF、ON"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::log_slow_slave_statements",
+            "value": "ON",
+            "defaultValue": "OFF",
+            "description": "类型：布尔，启用慢查询日志时，此变量将启用对从属服务器执行超过long_query_time秒的查询的日志记录。 请注意，如果正在使用基于行的复制（binlog_format = ROW），则log_slow_slave_statements无效。 查询仅在二进制日志中以语句格式记录时添加到从属的慢查询日志中，即，当设置了binlog_format = STATEMENT时，或者设置了binlog_format = MIXED并且语句以语句格式记录时。 设置binlog_format = MIXED时以行格式记录的慢查询，或者设置binlog_format = ROW时记录的慢查询，不会添加到从属的慢查询日志中，即使启用了log_slow_slave_statements也是如此。",
+            "range": "OFF、ON"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::sort_buffer_size",
+            "value": "2M",
+            "defaultValue": "262144",
+            "description": "类型：整数，每个会话分配的排序缓冲区的大小。",
+            "range": "32768 - 18446744073709551615"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::read_buffer_size",
+            "value": "8M",
+            "defaultValue": "131072",
+            "description": "类型：整数，对MyISAM表执行顺序扫描的每个线程为其扫描的每个表分配一个此大小的缓冲区（以字节为单位）。 如果执行许多顺序扫描，则可能需要增加此值，默认值为131072.此变量的值应为4KB的倍数。 如果将其设置为不是4KB的倍数的值，则其值将向下舍入到最接近的4KB的倍数。",
+            "range": "8200 - 2147479552"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::read_rnd_buffer_size",
+            "value": "8M",
+            "defaultValue": "262144",
+            "description": "类型：整数，此变量用于从MyISAM表读取，对于任何存储引擎，用于多范围读取优化。",
+            "range": "1 - 2147483647"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::tmp_table_size",
+            "value": "64M",
+            "defaultValue": "16777216",
+            "description": "类型：整数，内部内存临时表的最大大小。 此变量不适用于用户创建的MEMORY表。",
+            "range": "1024 - 18446744073709551615"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::max_heap_table_size",
+            "value": "64M",
+            "defaultValue": "16777216",
+            "description": "类型：整数，此变量设置允许用户创建的MEMORY表增长的最大大小。 变量的值用于计算MEMORY表的MAX_ROWS值。 设置此变量对任何现有MEMORY表都没有影响，除非使用诸如CREATE TABLE之类的语句重新创建表，或者使用ALTER TABLE或TRUNCATE TABLE更改该表。 服务器重新启动还会将现有MEMORY表的最大大小设置为全局max_heap_table_size值。",
+            "range": "16384 - 1844674407370954752"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::sql_mode",
+            "value": "'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION'",
+            "defaultValue": "ONLY_FULL_GROUP_BY STRICT_TRANS_TABLES NO_ZERO_IN_DATE NO_ZERO_DATE ERROR_FOR_DIVISION_BY_ZERO NO_AUTO_CREATE_USER NO_ENGINE_SUBSTITUTION",
+            "description": "类型：集合，数据库支持多种SQL模式下运行。",
+            "range": ""
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::symbolic-links",
+            "value": "OFF",
+            "defaultValue": "",
+            "description": "类型：布尔，支持符号链接。",
+            "range": "OFF、ON"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::event_scheduler",
+            "value": "1",
+            "defaultValue": "OFF",
+            "description": "类型：枚举，事件调度器开关。",
+            "range": "ON、OFF、DISABLED"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::general_log",
+            "value": "OFF",
+            "defaultValue": "OFF",
+            "description": "类型：布尔，通用日志开关。",
+            "range": "OFF、ON"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::interactive_timeout",
+            "value": "1800",
+            "defaultValue": "28800",
+            "description": "类型：整数，进程等待一个已经建立连接的交互式客户端的后续命令之前所经过的秒数。作用范围为全局或会话级别，用于配置文件，属动态变量。",
+            "range": "1 - "
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::wait_timeout",
+            "value": "1800",
+            "defaultValue": "28800",
+            "description": "类型：整数，服务器在关闭非交互式连接之前等待活动的秒数。",
+            "range": "1 - 31536000"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::join_buffer_size",
+            "value": "8M",
+            "defaultValue": "262144",
+            "description": "类型：整数，每个会话进行索引扫描、范围索引扫描或者全表扫描使用连接缓冲区的大小。",
+            "range": "128 - 18446744073709547520"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::key_buffer_size",
+            "value": "16M",
+            "defaultValue": "8388608",
+            "description": "类型：整数，所有线程共享的、用于MyISAM表的索引缓冲空间大小，其也通常被称作key cache。",
+            "range": "8 -（OS_PER_PROCESS_LIMIT）"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::log_bin_trust_function_creators",
+            "value": "ON",
+            "defaultValue": "OFF",
+            "description": "类型：布尔，用于控制创建存储函数时如果会导致不安全的事件记录二进制日志条件下是否禁止创建存储函数。默认值为0，表示除非用户除了CREATE ROUTING或ALTER ROUTINE权限外还有SUPER权限，否则将禁止创建或修改存储函数，同时，还要求在创建函数时必需为之使用DETERMINISTIC属性，再不然就是附带READS SQL DATA或NO SQL属性。设置其值为1时则不启用这些限制。",
+            "range": "OFF、ON"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::sync_binlog",
+            "value": "1",
+            "defaultValue": "1",
+            "description": "类型：整数，控制二进制日志同步到磁盘之前提交组的数量，当为0时，将关闭binlog同步到磁盘，当为1时，将开启binlog同步到磁盘。",
+            "range": "0 - 4294967295"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::binlog_cache_size",
+            "value": "1M",
+            "defaultValue": "32768",
+            "description": "类型：整数，数据库binlog日志缓冲池大小。",
+            "range": "4096 - 18446744073709551615"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::binlog_checksum",
+            "value": "CRC32",
+            "defaultValue": "CRC32",
+            "description": "类型：字符串，启用此变量后，该变量将为二进制日志中的每个事件写入校验值。",
+            "range": ""
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::binlog_format",
+            "value": "row",
+            "defaultValue": "ROW",
+            "description": "类型：枚举，数据库binlog记录的类型。",
+            "range": "ROW、STATEMENT、MIXED"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::binlog_row_image",
+            "value": "full",
+            "defaultValue": "full",
+            "description": "类型：枚举，对于基于MySQL行的复制，此变量确定写入二进制日志中日志列的镜像。",
+            "range": "full、minimal、noblob"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::binlog_rows_query_log_events",
+            "value": "1",
+            "defaultValue": "OFF",
+            "description": "类型：布尔，启用时，会导致MySQL服务器将信息日志事件（如行查询日志事件）写入其二进制日志。",
+            "range": "OFF、ON"
+        },
+        {
+            "canset": false,
+            "mustRestart": true,
+            "key": "mysqld::gtid_mode",
+            "value": "ON",
+            "defaultValue": "OFF",
+            "description": "类型：枚举，是否开启gtid模式。",
+            "range": "ON、OFF、OFF_PERMISSIVE、ON_PERMISSIVE"
+        },
+        {
+            "canset": true,
+            "mustRestart": true,
+            "key": "mysqld::binlog_gtid_simple_recovery",
+            "value": "ON",
+            "defaultValue": "OFF",
+            "description": "类型：布尔，此变量控制在MySQL启动或重新启动时搜索GTID期间迭代二进制日志文件的方式。",
+            "range": "OFF、ON"
+        },
+        {
+            "canset": false,
+            "mustRestart": true,
+            "key": "mysqld::enforce_gtid_consistency",
+            "value": "ON",
+            "defaultValue": "OFF",
+            "description": "类型：枚举，OFF：允许所有交易违反GTID一致性。ON：不允许任何交易违反GTID一致性。",
+            "range": "ON、OFF、WARN"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::expire_logs_days",
+            "value": "7",
+            "defaultValue": "0",
+            "description": "类型：整数，设定二进制日志的过期天数，超出此天数的二进制日志文件将被自动删除。DBAAS平台有自动清理策略，无需设置。",
+            "range": "0 - 99"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::explicit_defaults_for_timestamp",
+            "value": "1",
+            "defaultValue": "OFF",
+            "description": "类型：布尔，该系统变量确定服务器是否为TIMESTAMP列中的默认值和NULL值处理启用某些非标准行为。 默认情况下，explicit_defaults_for_timestamp被禁用，这将启用非标准行为。 ",
+            "range": "OFF、ON"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::master_verify_checksum",
+            "value": "ON",
+            "defaultValue": "OFF",
+            "description": "类型：布尔，主服务器从二进制日志读取的校验和来验证数据。",
+            "range": "OFF、ON"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::max_binlog_size",
+            "value": "250M",
+            "defaultValue": "1073741824",
+            "description": "类型：整数，数据库单个binlog日志大小，超过这个大小，数据库将会切换至下一个日志。",
+            "range": "4096 - 1073741824"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::innodb_buffer_pool_dump_at_shutdown",
+            "value": "ON",
+            "defaultValue": "ON",
+            "description": "类型：布尔，指定在MySQL服务器关闭时是否记录InnoDB缓冲池中缓存的页面，以便在下次重新启动时缩短预热过程。",
+            "range": "OFF、ON"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::innodb_buffer_pool_dump_pct",
+            "value": "40",
+            "defaultValue": "25",
+            "description": "类型：数字，指定每个缓冲池最近使用的页面读取和转储的百分比。",
+            "range": "1 - 100"
+        },
+        {
+            "canset": false,
+            "mustRestart": true,
+            "key": "mysqld::innodb_buffer_pool_instances",
+            "value": "8",
+            "defaultValue": "8",
+            "description": "类型：整数，数据库bufferpool的分区数，将缓冲池划分为单独的实例可以通过减少不同线程读取和写入缓存页面的争用来提高并发性。",
+            "range": "1 - 64"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::innodb_buffer_pool_load_at_startup",
+            "value": "ON",
+            "defaultValue": "ON",
+            "description": "类型：布尔，指在MySQL服务器启动时，InnoDB缓冲池通过加载较早时所保持的相同页面而自动加热。",
+            "range": "OFF、ON"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::innodb_sort_buffer_size",
+            "value": "8M",
+            "defaultValue": "1048576",
+            "description": "类型：整型，指定在创建InnoDB索引期间用于对数据进行排序的排序缓冲区的大小。 指定的大小定义读入内存以进行内部排序然后写入磁盘的数据量。 该过程称为“运行”。 在合并阶段，读取并合并指定大小的缓冲区对。 设置越大，运行和合并越少。",
+            "range": "65536 - 67108864"
+        },
+        {
+            "canset": false,
+            "mustRestart": true,
+            "key": "mysqld::innodb_checksums",
+            "value": "ON",
+            "defaultValue": "ON",
+            "description": "类型：布尔，InnoDB可以对从磁盘读取的所有表空间页面使用校验和验证，以确保对硬件故障或损坏的数据文件的额外容错。",
+            "range": "OFF、ON"
+        },
+        {
+            "canset": false,
+            "mustRestart": true,
+            "key": "mysqld::innodb_data_file_path",
+            "value": "ibdata1:1024M:autoextend",
+            "defaultValue": "ibdata1:12M:autoextend",
+            "description": "类型：字符串，指InnoDB的各个数据文件及其大小。",
+            "range": ""
+        },
+        {
+            "canset": false,
+            "mustRestart": true,
+            "key": "mysqld::innodb_temp_data_file_path",
+            "value": "ibtmp1:12M:autoextend:max:20G",
+            "defaultValue": "ibtmp1:12M:autoextend",
+            "description": "类型：字符串，定义InnoDB临时表空间数据文件的相对路径，名称，大小和属性。 如果没有为innodb_temp_data_file_path指定值，则默认行为是在MySQL数据目录中创建名为ibtmp1的单个自动扩展数据文件。 初始文件大小略大于12MB。",
+            "range": ""
+        },
+        {
+            "canset": false,
+            "mustRestart": true,
+            "key": "mysqld::innodb_doublewrite",
+            "value": "ON",
+            "defaultValue": "ON",
+            "description": "类型：布尔，启用时，InnoDB将所有数据存储两次，首先是双重缓冲区，然后再存储到实际的数据文件中。",
+            "range": "OFF、ON"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::innodb_deadlock_detect",
+            "value": "OFF",
+            "defaultValue": "ON",
+            "description": "类型：布尔，死锁检测开关。",
+            "range": "OFF、ON"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::innodb_file_per_table",
+            "value": "1",
+            "defaultValue": "ON",
+            "description": "类型：布尔，指InnoDB表是否使用每表表空间数据文件(以.ibd结尾)分别存储每个表的数据和索引。",
+            "range": "OFF、ON"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::innodb_flush_log_at_trx_commit",
+            "value": "1",
+            "defaultValue": "1",
+            "description": "类型：枚举，InnoDB同步日志缓冲区(log buffer)数据至日志文件中的方式，以及刷写日志文件至磁盘的方式。“0”表示将日志缓冲区每秒一次地写入日志文件，并同时将日志文件刷写至磁盘中，但事务提交时不会采取任何动作；“1”是默认值，表示在有事务提交时将日志缓冲区写入日志文件，并同时将日志文件刷写至磁盘；“2”表示每事务提交或每秒一次将日志缓冲区写入日志文件，但不会同时执行日志文件的刷写操作。",
+            "range": "0、1、2"
+        },
+        {
+            "canset": false,
+            "mustRestart": true,
+            "key": "mysqld::innodb_flush_method",
+            "value": "O_DIRECT",
+            "defaultValue": "",
+            "description": "类型：字符串，指InnoDB实际与文件系统进行交互的方式。",
+            "range": "fsync、O_DSYNC、littlesync、nosync、O_DIRECT、O_DIRECT_NO_FSYNC"
+        },
+        {
+            "canset": false,
+            "mustRestart": true,
+            "key": "mysqld::innodb_flush_neighbors",
+            "value": "1",
+            "defaultValue": "1",
+            "description": "类型：枚举，指定从InnoDB缓冲池刷新页面是否也刷新相同范围内的其他脏页。设置为0将禁用innodb_flush_neighbors。 相同范围的脏页面不会被刷新。默认设置为1会刷新相同范围内的连续脏页。设置为2以相同的范围刷新脏页。",
+            "range": "0、1、2"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::innodb_io_capacity",
+            "value": "1000",
+            "defaultValue": "200",
+            "description": "类型：整数，设定InnoDB后台任务(如从缓冲池刷写页面或合并修改缓冲中的数据等)可执行的I/O操作上限。",
+            "range": "100 - 2**64-1"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::innodb_io_capacity_max",
+            "value": "2000",
+            "defaultValue": "",
+            "description": "类型：整数，I/O容量的上限。",
+            "range": "100 - 2**64-1"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::innodb_large_prefix",
+            "value": "ON",
+            "defaultValue": "ON",
+            "description": "类型：布尔，启用此选项后，对于使用DYNAMIC或COMPRESSED行格式的InnoDB表，允许长度超过767字节（最多3072字节）的索引键前缀。",
+            "range": "OFF、ON"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::innodb_strict_mode",
+            "value": "ON",
+            "defaultValue": "ON",
+            "description": "类型：布尔，启用innodb_strict_mode时，InnoDB会针对某些条件返回错误而不是警告。",
+            "range": "OFF、ON"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::innodb_autoinc_lock_mode",
+            "value": "2",
+            "defaultValue": "1",
+            "description": "类型：枚举，用于生成自动增量值的锁定模式。 对于传统，连续或交错，允许值分别为0,1或2。",
+            "range": "0、1、2"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::innodb_online_alter_log_max_size",
+            "value": "1G",
+            "defaultValue": "134217728",
+            "description": "类型：整数，指定InnoDB表的联机DDL操作期间使用的临时日志文件大小的上限（以字节为单位）。 每个创建的索引或要更改的表都有一个这样的日志文件。 此日志文件存储在DDL操作期间在表中插入，更新或删除的数据。",
+            "range": "65536 - 2**64-1"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::innodb_lock_wait_timeout",
+            "value": "10",
+            "defaultValue": "50",
+            "description": "类型：整数，指InnoDB中某事务试图访问一个由其它InnoDB事务加锁的行时其最长的等待时间，单位为秒钟。",
+            "range": "1 - 1073741824"
+        },
+        {
+            "canset": false,
+            "mustRestart": true,
+            "key": "mysqld::innodb_log_buffer_size",
+            "value": "64M",
+            "defaultValue": "16777216",
+            "description": "类型：整数，设定InnoDB用于辅助完成日志文件写操作的日志缓冲区大小，单位是字节。",
+            "range": "1048576 - 4294967295"
+        },
+        {
+            "canset": false,
+            "mustRestart": true,
+            "key": "mysqld::innodb_log_files_in_group",
+            "value": "2",
+            "defaultValue": "2",
+            "description": "类型：整数，设定日志组中日志文件的个数，InnoDB以循环的方式使用这些日志文件。",
+            "range": "2 - 100"
+        },
+        {
+            "canset": false,
+            "mustRestart": true,
+            "key": "mysqld::innodb_log_file_size",
+            "value": "2G",
+            "defaultValue": "50331648",
+            "description": "类型：整数，设定日志组中每个日志文件的大小，单位是字节。",
+            "range": "4194304 - 512GB"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::innodb_lru_scan_depth",
+            "value": "4096",
+            "defaultValue": "1024",
+            "description": "类型：整数，影响InnoDB缓冲池的flush操作的算法和启发式的参数。",
+            "range": "100 - 2**64-1"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::innodb_max_dirty_pages_pct",
+            "value": "60",
+            "defaultValue": "75",
+            "description": "类型：数字，指InnoDB的缓冲池中脏页比例的上限。",
+            "range": "0 - 99.99"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::innodb_max_undo_log_size",
+            "value": "4G",
+            "defaultValue": "1073741824",
+            "description": "类型：整数，定义撤销表空间的阈值大小。 如果undo表空间超过阈值，则当启用innodb_undo_log_truncate时，可以将其标记为截断。",
+            "range": "100 - 2**64-1"
+        },
+        {
+            "canset": false,
+            "mustRestart": true,
+            "key": "mysqld::innodb_open_files",
+            "value": "4096",
+            "defaultValue": "",
+            "description": "类型：整数，指MySQL可以一次保持打开的.ibd文件的最大数量。",
+            "range": "10 - 4294967295"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::innodb_page_cleaners",
+            "value": "8",
+            "defaultValue": "4",
+            "description": "类型：整数，从缓冲池实例刷新脏页的页面清理线程数。",
+            "range": "1 - 64"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::innodb_print_all_deadlocks",
+            "value": "ON",
+            "defaultValue": "OFF",
+            "description": "类型：布尔，定义清除系统释放回滚段的频率。",
+            "range": "OFF、ON"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::innodb_purge_batch_size",
+            "value": "1000",
+            "defaultValue": "300",
+            "description": "类型：整数，清写(purge)是指将缓存池中的脏页同步至持久性存储设备中的操作，以重做日志的记录为单位。此变量则用于定义清写操作的粒度，即多少个重做日志记录组合起来可以触发一次清写操作。",
+            "range": "1 - 5000"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::innodb_purge_rseg_truncate_frequency",
+            "value": "128",
+            "defaultValue": "128",
+            "description": "类型：整数，定义清除系统根据调用清除次数释放回滚段的频率。",
+            "range": "1 - 128"
+        },
+        {
+            "canset": false,
+            "mustRestart": true,
+            "key": "mysqld::innodb_rollback_on_timeout",
+            "value": "ON",
+            "defaultValue": "OFF",
+            "description": "类型：布尔，默认情况下，InnoDB仅回滚事务超时的最后一条语句。 如果指定了这个参数，则事务超时将导致InnoDB中止并回滚整个事务。",
+            "range": "OFF、ON"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::innodb_spin_wait_delay",
+            "value": "6",
+            "defaultValue": "6",
+            "description": "类型：整数，轮询锁定之间的最大延迟。",
+            "range": "1 - 2**64-1"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::innodb_stats_on_metadata",
+            "value": "OFF",
+            "defaultValue": "OFF",
+            "description": "类型：布尔，仅当优化程序统计信息配置为非持久性时，此选项才适用。当innodb_stats_persistent被禁用或使用STATS_PERSISTENT = 0创建或更改各个表时，优化器统计信息不会持久存储到磁盘。",
+            "range": "OFF、ON"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::innodb_stats_persistent_sample_pages",
+            "value": "64",
+            "defaultValue": "20",
+            "description": "类型：整数，收集索引和表格统计信息时，需要统计页数。增加该值可提高索引统计信息的准确性，从而可以改善查询执行计划，同时会增加的I/O的代价。",
+            "range": ""
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::innodb_stats_transient_sample_pages",
+            "value": "1",
+            "defaultValue": "8",
+            "description": "类型：整数，估计索引列的基数和其他统计信息所需要的索引页数。",
+            "range": ""
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::innodb_support_xa",
+            "value": "ON",
+            "defaultValue": "ON",
+            "description": "类型：布尔，启用InnoDB支持XA事务中的两阶段提交。",
+            "range": "OFF、ON"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::innodb_numa_interleave",
+            "value": "ON",
+            "defaultValue": "OFF",
+            "description": "类型：布尔，启用NUMA交错存储器策略以分配InnoDB缓冲池。 启用innodb_numa_interleave时，将为mysqld进程将NUMA内存策略设置为MPOL_INTERLEAVE。 分配InnoDB缓冲池后，NUMA内存策略将重新设置为MPOL_DEFAULT。 要使innodb_numa_interleave选项可用，必须在支持NUMA的Linux系统上编译MySQL。",
+            "range": "OFF、ON"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::innodb_sync_spin_loops",
+            "value": "300",
+            "defaultValue": "30",
+            "description": "类型：整数，线程等待InnoDB互斥体在线程挂起之前被释放的次数。",
+            "range": "0 - 4294967295"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::innodb_thread_concurrency",
+            "value": "0",
+            "defaultValue": "0",
+            "description": "类型：整数，指InnoDB可在其内部并发运行的操作系统线程数量上限。多出的线程将被放置于FIFO队列进行等待，且不被计入并发运行线程数量。",
+            "range": "0 - 1000"
+        },
+        {
+            "canset": true,
+            "mustRestart": false,
+            "key": "mysqld::innodb_undo_log_truncate",
+            "value": "ON",
+            "defaultValue": "OFF",
+            "description": "类型：布尔，启用后，将超过innodb_max_undo_log_size定义的阈值的撤消表空间标记为截断。 只能撤消撤消表空间。 不支持截断驻留在系统表空间中的撤消日志。 要进行截断，必须至少有两个undo表空间和两个已启用redo的undo日志配置为使用undo表空间。",
+            "range": "OFF、ON"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::innodb_undo_tablespaces",
+            "value": "3",
+            "defaultValue": "0",
+            "description": "类型：整数，InnoDB使用的撤消表空间数。",
+            "range": "0 - 95"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::loose-validate_password_length",
+            "value": "8",
+            "defaultValue": "8",
+            "description": "类型：整数，要求密码具有的最小字符数。 需要安装validate_password，否则此变量不可用。",
+            "range": "0 - "
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::loose-validate_password_mixed_case_count",
+            "value": "0",
+            "defaultValue": "1",
+            "description": "类型：整数，如果密码策略为MEDIUM或更强，则validate_password要求密码具有的最小小写字符和大写字符数。 需要安装validate_password，否则此变量不可用。",
+            "range": "0 - "
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::loose-validate_password_number_count",
+            "value": "1",
+            "defaultValue": "1",
+            "description": "类型：整数，如果密码策略为MEDIUM或更强，则validate_password要求密码具有的最小数字字符数。 需要安装validate_password，否则此变量不可用。",
+            "range": "0 - "
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::loose-validate_password_policy",
+            "value": "MEDIUM",
+            "defaultValue": "MEDIUM",
+            "description": "类型：枚举，可以使用数值0,1,2或相应的符号值LOW，MEDIUM，STRONG指定validate_password_policy值。 下表描述了为每个策略执行的测试。 对于长度测试，所需长度是validate_password_length系统变量的值。 同样，其他测试所需的值由其他validate_password_xxx变量给出。",
+            "range": "LOW、MEDIUM、STRONG"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::loose-validate_password_special_char_count",
+            "value": "0",
+            "defaultValue": "1",
+            "description": "类型：整数，如果密码策略为MEDIUM或更强，则validate_password要求密码具有的最小特殊字符数。 需要安装validate_password，否则此变量不可用。",
+            "range": "0 - "
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::loose-rpl_semi_sync_master_timeout",
+            "value": "30000",
+            "defaultValue": "10000",
+            "description": "类型：整型，一个以毫秒为单位的值，用于控制主机在超时并恢复到异步复制之前等待提交来自从机的确认的时间。 默认值为10000（10秒）。",
+            "range": ""
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::loose-rpl_semi_sync_master_trace_level",
+            "value": "32",
+            "defaultValue": "32",
+            "description": "类型：枚举，主服务器上的半同步复制调试跟踪级别。 定义了四个级别：1 =一般级别（例如，时间函数失败），16 =详细程度（更详细的信息），32 =净等待级别（有关网络等待的更多信息），64 =功能级别（有关功能进入和退出的信息）。",
+            "range": "1、16、32、64"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::loose-rpl_semi_sync_master_wait_no_slave",
+            "value": "OFF",
+            "defaultValue": "OFF",
+            "description": "类型：布尔，控制主服务器是否等待rpl_semi_sync_master_timeout配置的超时时间到期，即使从服务器计数降至小于超时期间rpl_semi_sync_master_wait_for_slave_count配置的从服务器数。",
+            "range": "OFF、ON"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::loose-rpl_semi_sync_slave_trace_level",
+            "value": "32",
+            "defaultValue": "32",
+            "description": "类型：枚举，主服务器上的半同步复制调试跟踪级别。 定义了四个级别：1 =一般级别（例如，时间函数失败），16 =详细程度（更详细的信息），32 =净等待级别（有关网络等待的更多信息），64 =功能级别（有关功能进入和退出的信息）。",
+            "range": "1、16、32、64"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::loose-rpl_semi_sync_master_wait_for_slave_count",
+            "value": "1",
+            "defaultValue": "1",
+            "description": "类型：整型，主服务器必须在继续之前必须接收的从服务确认数。 默认情况下，rpl_semi_sync_master_wait_for_slave_count为1，这意味着在接收到单个从属确认后，半同步复制将继续进行。 性能最适合此变量的小值。",
+            "range": "1 - 65535"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::slave_parallel_workers",
+            "value": "16",
+            "defaultValue": "0",
+            "description": "类型：整型，设置并行执行复制事务的从属应用程序线程数。 将此变量设置为大于0的数字会创建具有此数量的应用程序线程的多线程从属。 设置为0（默认值）时，并行执行被禁用，从站使用单个应用程序线程。",
+            "range": "0 - 1024"
+        },
+        {
+            "canset": false,
+            "mustRestart": false,
+            "key": "mysqld::slave_preserve_commit_order",
+            "value": "ON",
+            "defaultValue": "OFF",
+            "description": "类型：布尔，对于多线程从站，此变量的设置1确保事务在从站上以与从站的中继日志中出现的顺序相同的顺序外部化，并防止从中继日志执行的事务序列中的间隙。 此变量对未启用多线程的从站没有影响。 请注意，slave_preserve_commit_order = 1不保留非事务性DML更新的顺序，因此这些更新可能会在中继日志中位于它们之前的事务之前提交，这可能会导致间隙。",
+            "range": "OFF、ON"
+        }
+    ]
+}

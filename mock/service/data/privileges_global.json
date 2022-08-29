@@ -1,0 +1,29 @@
+{
+    "code": 200,
+    "data": [
+        {
+            "code": "SUPER",
+            "description": "SUPER",
+            "enabled": true,
+            "sequence": 990
+        },
+        {
+            "code": "PROCESS",
+            "description": "PROCESS",
+            "enabled": true,
+            "sequence": 990
+        },
+        {
+            "code": "REPLICATION SLAVE",
+            "description": "REPLICATION SLAVE",
+            "enabled": true,
+            "sequence": 990
+        },
+        {
+            "code": "REPLICATION CLIENT",
+            "description": "REPLICATION CLIENT",
+            "enabled": true,
+            "sequence": 990
+        }
+    ]
+}

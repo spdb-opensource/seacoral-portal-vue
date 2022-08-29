@@ -1,0 +1,18 @@
+[
+    {
+        "id": "121",
+        "code": "auto",
+        "name": "自动",
+        "sequence": 1,
+        "gmtCreate": "2019-08-13 10:52:35",
+        "creator": "admin"
+    },
+    {
+        "id": "122",
+        "code": "manual",
+        "name": "手动",
+        "sequence": 2,
+        "gmtCreate": "2019-08-13 10:52:35",
+        "creator": "admin"
+    }
+]

@@ -1,0 +1,21 @@
+{
+    "code": 200,
+    "data": {
+        "role": {
+            "id": "1",
+            "name": "超级管理员"
+        },
+        "ogScope": {
+            "code": "all",
+            "display": "所有数据"
+        },
+        "sgScope": {
+            "code": "all",
+            "display": "所有数据"
+        },
+        "operateLogScope": {
+            "code": "all",
+            "display": "所有数据"
+        }
+    }
+}

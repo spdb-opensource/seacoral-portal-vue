@@ -1,0 +1,41 @@
+{
+    "code": 200,
+    "data": [
+        {
+            "id": "1c4b7469-076d-43bf-92c0-0682931ce288",
+            "name": "test1",
+            "servGroupId": "06ebc8dd-d2f8-46c3-b2d7-2a07e0e3affd",
+            "unitId": "",
+            "schedule": "0 5 13 * * *",
+            "enabled": true,
+            "retention": 5,
+            "desc": "",
+            "role": "",
+            "backupType": "全备",
+            "created": {
+                "username": "admin",
+                "name": "超级管理员",
+                "timestamp": "2020-04-21 13:13:42"
+            },
+            "modified": {}
+        },
+        {
+            "id": "7f343bf9-a01d-4c62-9cd3-983476e2bafc",
+            "name": "test2",
+            "servGroupId": "06ebc8dd-d2f8-46c3-b2d7-2a07e0e3affd",
+            "unitId": "",
+            "schedule": "0 10 13 * * 2",
+            "enabled": true,
+            "retention": 7,
+            "desc": "",
+            "role": "",
+            "backupType": "全备",
+            "created": {
+                "username": "admin",
+                "name": "超级管理员",
+                "timestamp": "2020-04-21 13:14:05"
+            },
+            "modified": {}
+        }
+    ]
+}
