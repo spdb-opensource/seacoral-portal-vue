@@ -105,6 +105,6 @@ Modern browsers and Internet Explorer 10+.
 
 ## License
 
-[MIT](https://github.com/PanJiaChen/vue-element-admin/blob/master/LICENSE)
+[Apache License 2.0](./LICENSE)
 
 Copyright (c) 2020-present Shanghai Pudong Development Bank
