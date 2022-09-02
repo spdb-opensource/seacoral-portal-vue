@@ -1,10 +1,10 @@
 ## 简介
 
-[dbpool-frontend](https://panjiachen.github.io/vue-element-admin) 是开源数据库资源池的前端解决方案，本项目基于 [vue-element-admin](https://panjiachen.github.io/vue-element-admin) 进行了二次开发
+[seacoral-portal-vue](https://github.com/spdb-opensource/seacoral-portal-vue) 是开源数据库资源池的前端解决方案，本项目基于 [vue-element-admin](https://panjiachen.github.io/vue-element-admin) 进行了二次开发
 
 - [在线预览](https://panjiachen.github.io/vue-element-admin)
 
-** 若发现问题，欢迎提[issue](https://github.com/PanJiaChen/vue-element-admin/issues/new)。
+** 若发现问题，欢迎提[issue](https://github.com/spdb-opensource/seacoral-portal-vue/issues/new)。
 
 ## 前序准备
 
@@ -43,10 +43,10 @@
 
 ```bash
 # 克隆项目
-git clone https://github.com/PanJiaChen/dbpool-frontend.git
+git clone https://github.com/spdb-opensource/seacoral-portal-vue
 
 # 进入项目目录
-cd dbpool-frontend
+cd seacoral-portal-vue
 
 # 安装依赖
 npm install
@@ -89,11 +89,7 @@ npm run lint -- --fix
 
 ## Changelog
 
-Detailed changes for each release are documented in the [release notes](https://github.com/PanJiaChen/vue-element-admin/releases).
-
-## Online Demo
-
-[在线 Demo](https://panjiachen.github.io/vue-element-admin)
+Detailed changes for each release are documented in the [release notes](https://github.com/spdb-opensource/seacoral-portal-vue/releases).
 
 ## Browsers support
 
